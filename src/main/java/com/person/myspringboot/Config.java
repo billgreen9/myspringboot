@@ -4,6 +4,11 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
+/**
+ * 从properties文件中读取数据，prefix表示以hello开头
+ * @author liuquan3
+ *
+ */
 @Configuration
 @ConfigurationProperties(prefix="hello")
 public class Config {
@@ -25,11 +30,9 @@ public class Config {
 	}
 
 
-
 	public void setUrl(String url) {
 		this.url = url;
 	}
-
 
 
 	public String getInfo(){
