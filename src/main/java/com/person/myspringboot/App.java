@@ -3,6 +3,7 @@ package com.person.myspringboot;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,8 @@ public class App {
 	
 	@Value("${name}")
 	private String name;
+	
+	
 
 	@RequestMapping("/app")
 	@ResponseBody

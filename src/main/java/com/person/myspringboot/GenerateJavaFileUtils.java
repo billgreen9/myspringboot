@@ -246,7 +246,7 @@ public class GenerateJavaFileUtils {
 	 */
 	public static void main(String[] args) {
 		GenerateJavaFileUtils t = new GenerateJavaFileUtils();
-		t.tableToEntity("h5game_topic");///h5game_detail
+		t.tableToEntity("h5game_kaifu");///h5game_detail
 	}
 
 }

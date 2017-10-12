@@ -1,4 +1,4 @@
-package com.person.myspringboot;
+package com.person.myspringboot.controller;
 
 import java.lang.reflect.Constructor;
 
@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.person.myspringboot.Config;
 import com.person.myspringboot.dao.UserDAO;
 
 import antlr.collections.List;

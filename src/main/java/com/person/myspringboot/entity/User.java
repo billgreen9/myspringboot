@@ -41,8 +41,5 @@ public class User implements Serializable{
 		this.age = age;
 	}
 	
-	
- 
-	
 
 }

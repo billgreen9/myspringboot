@@ -17,9 +17,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.4.RELEASE</version>
+		<version>1.5.7.RELEASE</version>
 	</parent>
-
 
 	<dependencies>
 		<dependency>
@@ -73,6 +72,35 @@
 			<artifactId>poi-ooxml-schemas</artifactId>
 			<version>3.9</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.4</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.5</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>redis.clients</groupId>
+		  <artifactId>jedis</artifactId>
+		  <version>2.9.0</version>
+		</dependency>
+		  <!-- 引入freeMarker的依赖包. -->  
+	    <dependency>     
+	        <groupId>org.springframework.boot</groupId>    
+	        <artifactId>spring-boot-starter-freemarker</artifactId>  
+	    </dependency>  
 		<!-- 
 			<dependency>
 				<groupId>stax</groupId>
@@ -86,11 +114,20 @@
 
 	<build>
 		<plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+	        </plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<fork>true</fork>
+					<mainClass>com.person.myspringboot.App</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>
